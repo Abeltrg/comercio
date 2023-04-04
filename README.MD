@@ -20,8 +20,19 @@ Tecnologías utilizadas:
 
 Se han añadido algunos Test unitarios
 
+## Uso
+
+* Lanzar el proyecto
+* Acceder a http://localhost:8080/swagger-ui.html
+* Para acceder a la BD en memoria: http://localhost:8080/h2-console/
+
+Datos de acceso para la base de datos (sin password):
+* Driver Class: org.h2.Driver
+* JDBC URL: jdbc:h2:mem:comerciobd
+* Username: sa
+
 Al arrancar el proyecto, la base de datos se inicializa automáticamente con los siguientes productos:
-'''[
+```[
   {
     "id": "1020f066-b479-4e9c-8d2d-6265f9d5f306",
     "codigoBarras": "8484848456352",
@@ -82,15 +93,5 @@ Al arrancar el proyecto, la base de datos se inicializa automáticamente con los
     "productosCestas": [],
     "lineasFacturas": []
   }
-]'''
-
-## Uso
-
-* Lanzar el proyecto
-* Acceder a http://localhost:8080/swagger-ui.html
-* Para acceder a la BD en memoria: http://localhost:8080/h2-console/
-
-Datos de acceso para la base de datos (sin password):
-Driver Class: org.h2.Driver
-JDBC URL: jdbc:h2:mem:comerciobd
-Username: sa
+]
+```
